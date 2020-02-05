@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend-Finder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+    <div id="form_container">
+        <h2 class="form_titels">Questions</h2>
+        <hr>
+        <div id="about_input">
+            <label for="name" aria-required="true">Name</label>
+            <input type="text" id="name" maxlength="500">
+            <label for="photo" aria-required="true">Photo</label>
+            <input type="text" id="photo" maxlength="500">
+        </div>
+        <div id="quiz_container">
+            <section class="page" data-content="NPSForm">
+                <div id="survey_container">
+                    <h2 class="form_titels">Answer questions</h2>
+                    <hr>
+                    <form>
+                        <ol class="margin-b-0" id="question_container"></ol>
+                        <div id="quiz_button_container">
+                            <button class="btn-submit btn-small" id="quiz_button" type="submit">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="assets/js/survey.js"></script>
+        
+</body>
+
+</html>

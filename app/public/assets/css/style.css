@@ -1,0 +1,96 @@
+#form_container {
+    margin: 0 1em;
+} 
+
+.row {
+    margin: 0;
+}
+
+#title {
+    color: blueviolet;
+}
+
+input[type=radio] {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    margin: 0 .3rem 0 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -3px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+ol >li {
+    position: relative;
+    margin: 0 0 .3rem 3rem;
+}
+
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-weight: 700;
+    line-height: 1;
+    color: black; 
+    text-align: left;
+    font-size: 1em;
+}
+
+.label-active {
+    margin: 0 0.5em;
+}
+
+.btn-submit {
+    margin: 2em 0;
+}
+
+.btn,
+#quiz_button {
+    background: blueviolet;
+    color: black;
+    border: none;
+}
+
+#quiz_button {
+    padding: 0.5em 5em;
+    text-align: center;
+    align-items: center;
+}
+
+a{
+    color: black;
+}
+
+#about_input {
+    margin: auto;
+    text-align: center;
+    color: blueviolet;
+}
+
+.form_titels {
+    color: blueviolet;
+    text-align: center;
+}
+
+#quiz_container {
+    margin: 1.5em;
+    padding: 0;
+    text-align: left;
+
+}
+
+#email,
+#name {
+    width: 30%;
+    margin: 0 0.5em;
+}
+
+#quiz_button_container {
+    text-align: center;
+}
+
+.margin-b-3 {
+    margin: 1em 0;
+}
