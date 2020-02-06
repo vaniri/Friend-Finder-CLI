@@ -1,17 +1,16 @@
 const express = require('express');
 const router = express.Router();
-const fs = require("fs");
+const path = require("path");
 
-const bodyParser = require('body-parser');
-
-router.get("/", function(req, res) {
-    let page = fs.readFileSync("./app/public/index.html");
-    res.send(page.toString());
+router.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/index.html"));
+    console.log(path.join(__dirname));
+     //let page = fs.readFileSync("./app/public/index.html");
+    //res.send(page.toString());
   });
 
-  router.get("/survey", function(req, res) {
-    let page = fs.readFileSync("./app/public/survey.html");
-    res.send(page.toString());
+  router.get("/survey", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/survey.html"));
   });
 
   module.exports = router;

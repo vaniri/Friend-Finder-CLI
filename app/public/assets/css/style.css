@@ -1,3 +1,12 @@
+body {
+    background-image: linear-gradient(to left, #2F3C7E, rgb(80, 89, 131));
+}
+
+.jumbotron {
+    background-color: #eee;
+    text-align: center;
+}
+
 #form_container {
     margin: 0 1em;
 } 
@@ -7,36 +16,36 @@
 }
 
 #title {
-    color: blueviolet;
+    color: #FF8C00;
 }
 
 input[type=radio] {
     width: 1.5rem;
     height: 1.5rem;
-    padding: 0;
-    margin: 0 .3rem 0 0;
-    vertical-align: bottom;
+    margin: 0.3em 0.3em;
     position: relative;
-    top: -3px;
     overflow: hidden;
     cursor: pointer;
-    border-radius: 100%;
+    font-size: 30px;
 }
 
 ol >li {
-    position: relative;
-    margin: 0 0 .3rem 3rem;
+ 
+    margin: 1em 0;
 }
 
 .label {
     display: inline;
-    padding: .2em .6em .3em;
+    margin: 0.7em 0 1.5em 0;
     font-weight: 700;
     line-height: 1;
     color: black; 
-    text-align: left;
     font-size: 1em;
+    text-align: left;
+    padding: 0.5em;
+   
 }
+
 
 .label-active {
     margin: 0 0.5em;
@@ -48,7 +57,7 @@ ol >li {
 
 .btn,
 #quiz_button {
-    background: blueviolet;
+    background: #2F3C7E;
     color: black;
     border: none;
 }
@@ -64,26 +73,42 @@ a{
 }
 
 #about_input {
-    margin: auto;
+    margin: 2em auto 2.5em auto;
     text-align: center;
-    color: blueviolet;
+    color: initial;
+    width: 70%;
 }
 
-.form_titels {
-    color: blueviolet;
+#form_titels {
+    color: darkorange;
     text-align: center;
+    padding: 0.5em 0 0.3em 0;
+    font-size: 35px;
+}
+#survey_title {
+    background: #2F3C7E;
+    color: darkgrey;
+    text-align: center;
+    padding: 0.7em 0 0.5em 0;
 }
 
 #quiz_container {
-    margin: 1.5em;
+    width: 70%;
+    margin: 1.5em auto;
     padding: 0;
     text-align: left;
+    background-color: #f2f3f3;
 
 }
 
-#email,
+#survey_container {
+    margin: auto;
+    text-align: left;
+}
+
+#photo,
 #name {
-    width: 30%;
+    width: 48.3%;
     margin: 0 0.5em;
 }
 
@@ -94,3 +119,4 @@ a{
 .margin-b-3 {
     margin: 1em 0;
 }
+

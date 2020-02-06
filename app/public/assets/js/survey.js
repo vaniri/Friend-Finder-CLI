@@ -1,4 +1,7 @@
-const questions = ["Q1", "Q2", "Q3", "Q4", "Q5", "Q6", "Q7", "Q8", "Q9", "Q10"];
+const questions = ["Your mind is always buzzing with unexplored ideas and plans.", 
+"Generally speaking, you rely more on your experience than your imagination", 
+"You find it easy to stay relaxed and focused even when there is some pressure",
+ "Q4", "Q5", "Q6", "Q7", "Q8", "Q9", "Q10"];
 
 let questionIdx = 1;
 let table = null;
