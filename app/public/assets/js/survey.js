@@ -1,13 +1,8 @@
-const questions = ["Your mind is always buzzing with unexplored ideas and plans.", 
-"Generally speaking, you rely more on your experience than your imagination", 
-"You find it easy to stay relaxed and focused even when there is some pressure",
- "Q4", "Q5", "Q6", "Q7", "Q8", "Q9", "Q10"];
-
 let questionIdx = 1;
 let table = null;
 let scores = null;
 
-questions.forEach(question => {
+getQuestions().forEach(question => {
     table = $(`<li><fieldset><legend class="label">` +
         `${question}</legend><div id="row"></div></fieldset></li>`);
     for (let i = 1; i <= 5; i++) {
@@ -19,8 +14,7 @@ questions.forEach(question => {
     }
     questionIdx++;
     $("#question_container").append(table);
-
-});
+})
 
 $("#quiz_button").on("click", event => {
     event.preventDefault();
@@ -28,7 +22,7 @@ $("#quiz_button").on("click", event => {
     let name = $("#name").val();
     let photo = $("#photo").val();
     let scores = [];
-    for (let i = 1; i <= questions.length; ++i) {
+    for (let i = 1; i <= getQuestions().length; ++i) {
         scores.push(+($(`input[name=q${i}]:checked`).val()));
     }
 
@@ -36,7 +30,20 @@ $("#quiz_button").on("click", event => {
     console.log(userInfo);
 
     $.post("/api/friends", userInfo, res => {
-        console.log(res);
+        $.get("/api/friends", res => {
+            console.log("All users: ", res);
+        })
     });
 })
 
+// slideshow
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function () {
+    $('#slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+}, 3000);

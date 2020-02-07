@@ -4,9 +4,6 @@ const path = require("path");
 
 router.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/index.html"));
-    console.log(path.join(__dirname));
-     //let page = fs.readFileSync("./app/public/index.html");
-    //res.send(page.toString());
   });
 
   router.get("/survey", (req, res) => {
