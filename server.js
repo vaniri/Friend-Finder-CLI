@@ -15,5 +15,6 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, 'app/public')));
 
-app.listen(PORT, () => { console.log('We are live on ' + PORT); });
-
+app.listen(process.env.PORT || PORT, () => {
+  console.log(`server running on ${process.env.PORT || PORT}`)
+})
