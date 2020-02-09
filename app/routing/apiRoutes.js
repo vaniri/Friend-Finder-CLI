@@ -7,8 +7,8 @@ router.use(express.json());
 router.use(express.urlencoded({ extended: true }));
 
 router.post("/friends", (req, res) => {
+  res.status(201).json({ result: users.findMatch(req.body) });
   users.storeUser(req.body);
-  res.status(201).json({ message: "Saved user profile successfully!" });
 });
 
 router.get("/friends", (req, res) => {

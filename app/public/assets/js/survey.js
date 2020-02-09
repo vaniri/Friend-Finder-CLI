@@ -27,12 +27,9 @@ $("#quiz_button").on("click", event => {
     }
 
     let userInfo = { name, photo, scores };
-    console.log(userInfo);
 
     $.post("/api/friends", userInfo, res => {
-        $.get("/api/friends", res => {
-            console.log("All users: ", res);
-        })
+        console.log(res);
     });
 })
 

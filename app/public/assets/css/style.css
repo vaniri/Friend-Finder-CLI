@@ -15,8 +15,13 @@ body {
   width: 90%;
 }
 
-#form_container {
-  margin: 0 1em;
+.title {
+  color: #ff8c00;
+  padding: 1em 0 0 0;
+  font-family: "Cinzel", serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.1;
 }
 
 #mainpage_title {
@@ -30,7 +35,7 @@ body {
   background: blue;
   box-shadow: 0px 1px 3px 1px #2f3c7e;
   border: none;
-  border-radius: 10em;
+  border-radius: 3em;
   font-size: 15px;
 }
 
@@ -38,26 +43,68 @@ body {
   background: #ff8c00;
 }
 
+#go_home {
+  color: darkorange;
+}
+
+#go_home:hover {
+  color: #f2f3f3;
+  text-decoration: none;
+}
+
 a {
   text-decoration: none;
   color: mintcream;
 }
+
 a:hover {
   color: blue;
   text-decoration: none;
 }
 
-.row {
-  margin: 0;
+#form_container {
+  margin: 0 1em;
 }
 
-.title {
+#form_titels {
   color: #ff8c00;
-  padding: 1em 0 0 0;
+  text-align: center;
+  padding: 0.5em 0 0.3em 0;
+  font-size: 35px;
   font-family: "Cinzel", serif;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 1.1;
+}
+
+#photo,
+#name {
+  width: 48.6%;
+  margin: 0px 0.3em;
+}
+
+#about_input {
+  margin: 2em auto 2.5em auto;
+  text-align: center;
+  color: initial;
+  width: 70%;
+}
+
+#quiz_container {
+  width: 70%;
+  margin: 1.5em auto;
+  padding: 0;
+  text-align: left;
+  background-color: #f2f3f3;
+}
+
+#survey_container {
+  margin: auto;
+  text-align: left;
+}
+
+#survey_title {
+  background: #4c4c4c;
+  color: royalblue;
+  text-align: center;
+  padding: 0.7em 0 0.5em 0;
 }
 
 input[type="radio"] {
@@ -74,20 +121,12 @@ ol > li {
   margin: 1em 0;
 }
 
-.label {
-  display: inline;
-  margin: 0.7em 0 1.5em 0;
-  font-weight: 700;
-  line-height: 1;
-  color: black;
-  font-size: 1em;
-  text-align: left;
-  padding: 0.5em;
-  white-space: normal;
+.margin-b-3 {
+  margin: 1em 0;
 }
 
-.label-active {
-  margin: 0 0.5em;
+h6 {
+  color: darkorange;
 }
 
 .btn-submit {
@@ -99,7 +138,7 @@ ol > li {
   background: #2f3c7e;
   color: FLORALWHITE;
   border: none;
-  border-radius: 10em;
+  border-radius: 3em;
   box-shadow: 0px 1px 3px 1px #2f3c7e;
 }
 
@@ -114,52 +153,21 @@ ol > li {
   box-shadow: 0px 1px 3px 1px #ff8c00;
 }
 
-#about_input {
-  margin: 2em auto 2.5em auto;
-  text-align: center;
-  color: initial;
-  width: 70%;
-}
-
-#form_titels {
-  color: #ff8c00;
-  text-align: center;
-  padding: 0.5em 0 0.3em 0;
-  font-size: 35px;
-  font-family: "Cinzel", serif;
-}
-#survey_title {
-  background: #4c4c4c;
-  color: royalblue;
-  text-align: center;
-  padding: 0.7em 0 0.5em 0;
-}
-
-#quiz_container {
-  width: 70%;
-  margin: 1.5em auto;
-  padding: 0;
-  text-align: left;
-  background-color: #f2f3f3;
-}
-
-#survey_container {
-  margin: auto;
-  text-align: left;
-}
-
-#photo,
-#name {
-  width: 48.6%;
-  margin: 0px 0.3em;
-}
-
 #quiz_button_container {
   text-align: center;
 }
 
-.margin-b-3 {
-  margin: 1em 0;
+#footer {
+  margin-top: 3em;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+#footer_image {
+  text-align: center;
+  margin: 0 auto;
 }
 
 #slideshow {
@@ -180,30 +188,4 @@ ol > li {
 .slideshow_img {
   width: 100%;
   max-height: 100%;
-}
-
-#footer {
-  margin-top: 3em;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  text-align: center;
-}
-
-#footer_image {
-  text-align: center;
-  margin: 0 auto;
-}
-
-h6 {
-  color: darkorange;
-}
-
-#go_home {
-  color: darkorange;
-}
-
-#go_home:hover {
-  color: #f2f3f3;
-  text-decoration: none;
 }
