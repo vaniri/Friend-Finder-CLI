@@ -1,9 +1,7 @@
-const maxScore = 5;
-
 let users = [
     {
         name: "Ahmed",
-        photo: "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAq7AAAAJDAwYzI4NTQ4LWYwZWUtNGFkYS1hNTYwLTZjYzkwY2ViZDA3OA.jpg",
+        photo: "https://specials-images.forbesimg.com/imageserve/5e247ce9735f8c00079a3047/960x0.jpg",
         scores: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
     },
     {
@@ -13,8 +11,13 @@ let users = [
     },
     {
         name: "Jeremiah Scanlon",
-        photo: "https://avatars2.githubusercontent.com/u/8504998?v=3&s=460",
+        photo: "https://us.123rf.com/450wm/rh2010/rh20101901/rh2010190100859/116442253-man-winding-bandage-on-the-wrists-preparring-for-boxing-close-up-view-with-no-face.jpg?ver=6",
         scores: [2, 3, 4, 4, 1, 5, 5, 3, 5, 1]
+    },
+    {
+        name: "Charly",
+        photo: "https://media1.popsugar-assets.com/files/thumbor/1eRDtxzSY4tw8qyReHtZ51PbhZ8/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/06/19/639/n/1922283/cb4379b5c015e6dc_MCDCHAN_EC125_1_/i/Charlie-Chocolate-Factory.jpg",
+        scores: [2, 3, 1, 1, 1, 5, 5, 1, 1, 1]
     }
 ];
 
@@ -36,7 +39,7 @@ function findMatch(curUser) {
             minUserIdx = j;
         }
     }
-    
+
     return users[minUserIdx];
 }
 

@@ -7,7 +7,7 @@ getQuestions().forEach(question => {
         `${question}</legend><div id="row"></div></fieldset></li>`);
     for (let i = 1; i <= 5; i++) {
         let id = `${questionIdx}-${i}`;
-        scores = $(`<label for="${id}" class="label-active">` +
+        scores = $(`<label for="${id}" class="radio_label">` +
             `<input type="radio" name="q${questionIdx}" id="${id}" value="${i}">` +
             `${i} </label>`);
         table.append(scores);
@@ -29,8 +29,12 @@ $("#quiz_button").on("click", event => {
     let userInfo = { name, photo, scores };
 
     $.post("/api/friends", userInfo, res => {
-        console.log(res);
-    });
+        $("#match_name").text(res.result.name);
+        $("#match_photo").attr("src", res.result.photo);
+        console.log(res.result.name, res.result.photo)
+        openModal();
+    })
+
 })
 
 // slideshow
@@ -44,3 +48,24 @@ setInterval(function () {
         .end()
         .appendTo('#slideshow');
 }, 3000);
+
+
+//modal
+function openModal() {
+
+    const modal = $("#myModal");
+    const btn = $("#myBtn");
+    const span = $(".close")[0];
+
+    modal.css('display', 'block');
+
+    $(".close").on("click", () => {
+        modal.css('display', 'none');
+    })
+
+    $(window).on("click", event => {
+        if (event.target == modal) {
+            modal.css('display', 'none');
+        }
+    })
+}
