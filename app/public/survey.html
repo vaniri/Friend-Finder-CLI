@@ -17,21 +17,23 @@
 </head>
 
 <body>
-    <div id="form_container">
+    <div id="form_container" class="item-required">
         <h2 id="form_titels">
             <a class="title" href="index.html">Frends Finder</a>
         </h2>
         <hr>
-        <div id="about_input">
-            <input type="text" id="name" placeholder="Name" />
-            <input type="text" id="photo" placeholder="Photo" />
+        <div id="about_input" class="item-required"> 
+            <form action="">
+            <input type="text" id="name" name="Name" placeholder="Name" required/>
+            <input type="text" id="photo" placeholder="Photo" name="Photo" required/>
+            </form>
         </div>
-        <div id="quiz_container">
+        <div id="quiz_container" class="item-required">
             <section class="page" data-content="NPSForm">
                 <div id="survey_container">
                     <h2 id="survey_title">Answer questions</h2>
-                    <form>
-                        <ol class="margin-b-0" id="question_container"></ol>
+                    <form class="item-required">
+                        <ol id="question_container"></ol>
                         <div id="quiz_button_container">
                             <button class="btn-submit btn-small" id="quiz_button" type="submit">SUBMIT</button>
                         </div>
@@ -42,7 +44,6 @@
     </div>
 
     <div class="modal_container">
-        <!-- <button id="myBtn">Open Modal</button> -->
         <div id="myModal" class="modal">
             <div class="modal_content">
                 <span class="close">&times;</span>
