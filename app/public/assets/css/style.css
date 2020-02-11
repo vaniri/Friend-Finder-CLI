@@ -90,6 +90,12 @@ a:hover {
   width: 70%;
 }
 
+#survey_par {
+  margin: 1em 0 10px 1em;
+  font-size: 17px;
+  color: black;
+}
+
 #name:invalid:hover, 
 #photo:invalid:hover {
   border: 0.05em solid red;
